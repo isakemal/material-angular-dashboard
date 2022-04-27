@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import {IsasDashboardComponent} from './isas-dashboard';
 
 import { LayoutsModule } from './layouts';
 import { CommonLayoutComponent } from './layouts/common-layout';
@@ -20,6 +21,7 @@ import { FormsComponent } from './pages/forms';
         { path: 'app', component: CommonLayoutComponent, children: [
           { path: 'dashboard', component: DashboardComponent, pathMatch: 'full' },
           { path: 'dashboard-custom', component: Dashboard2Component, pathMatch: 'full' },
+          { path: 'isas-dashboard', component: IsasDashboardComponent, pathMatch: 'full' },
           { path: 'forms', component: FormsComponent, pathMatch: 'full' },
           { path: 'charts', component: ChartsComponent, pathMatch: 'full' },
           { path: 'components', component: ComponentsComponent, pathMatch: 'full' },
